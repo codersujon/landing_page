@@ -1,5 +1,5 @@
 <script setup>
-
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
@@ -37,9 +37,10 @@
             <div class="row">
               <div class="col-lg-12">
                 <nav class="navbar navbar-expand-lg">
-                  <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo.svg" alt="Logo">
-                  </a>
+                  <RouterLink class="navbar-brand" :to="{ name: home }">
+                    <img src="../../frontend/assets/images/logo.svg" alt="Logo">
+                  </RouterLink>
+
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="toggler-icon"></span>
                     <span class="toggler-icon"></span>
@@ -75,9 +76,9 @@
         </div> <!-- header navbar -->
 
         <div id="home" class="header_hero d-lg-flex align-items-center">
-          <img class="shape shape-1" src="assets/images/shape-1.svg" alt="shape">
-          <img class="shape shape-2" src="assets/images/shape-2.svg" alt="shape">
-          <img class="shape shape-3" src="assets/images/shape-3.svg" alt="shape">
+          <img class="shape shape-1" src="../../frontend/assets/images/shape-1.svg" alt="shape">
+          <img class="shape shape-2" src="../../frontend/assets/images/shape-2.svg" alt="shape">
+          <img class="shape shape-3" src="../../frontend/assets/images/shape-3.svg" alt="shape">
 
           <div class="container">
             <div class="row align-items-center">
@@ -95,8 +96,8 @@
           </div> <!-- container -->
           <div class="header_image d-flex align-items-end">
             <div class="image wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="1.8s">
-              <img src="assets/images/header_app.png" alt="header App">
-              <img src="assets/images/dots.svg" alt="dots" class="dots">
+              <img src="../../frontend/assets/images/header_app.png" alt="header App">
+              <img src="../../frontend/assets/images/dots.svg" alt="dots" class="dots">
             </div> <!-- image -->
           </div> <!-- header image -->
         </div> <!-- header hero -->
@@ -155,8 +156,8 @@
           <div class="row align-items-center">
             <div class="col-lg-6 col-md-9">
               <div class="about_image mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                <img class="image" src="assets/images/about.png" alt="about">
-                <img class="dots" src="assets/images/dots.svg" alt="dots">
+                <img class="image" src="../../frontend/assets/images/about.png" alt="about">
+                <img class="dots" src="../../frontend/assets/images/dots.svg" alt="dots">
               </div> <!-- about image -->
             </div>
             <div class="col-lg-6">
@@ -286,10 +287,10 @@
         <div class="container">
           <div class="download_app">
             <div class="download_shape">
-              <img src="assets/images/shape-5.svg" alt="shape">
+              <img src="../../frontend/assets/images/shape-5.svg" alt="shape">
             </div>
             <div class="download_shape_2">
-              <img src="assets/images/shape-6.png" alt="shape">
+              <img src="../../frontend/assets/images/shape-6.png" alt="shape">
             </div>
             <div class="download_app_content">
               <h3 class="download_title">Download The App</h3>
@@ -323,7 +324,7 @@
         </div> <!-- container -->
         <div class="download_app_image d-none d-lg-flex align-items-end">
           <div class="image wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
-            <img src="assets/images/download.png" alt="download">
+            <img src="../../frontend/assets/images/download.png" alt="download">
           </div> <!-- image -->
         </div> <!-- download app image -->
       </section>
@@ -346,7 +347,7 @@
             <div class="col-lg-4 col-md-8">
               <div class="single_blog blog_1 mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
                 <div class="blog_image">
-                  <img src="assets/images/blog-1.jpg" alt="blog">
+                  <img src="../../frontend/assets/images/blog-1.jpg" alt="blog">
                 </div>
                 <div class="blog_content">
                   <div class="blog_meta d-flex justify-content-between">
@@ -368,7 +369,7 @@
             <div class="col-lg-4 col-md-8">
               <div class="single_blog blog_2 mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
                 <div class="blog_image">
-                  <img src="assets/images/blog-2.jpg" alt="blog">
+                  <img src="../../frontend/assets/images/blog-2.jpg" alt="blog">
                 </div>
                 <div class="blog_content">
                   <div class="blog_meta d-flex justify-content-between">
@@ -390,7 +391,7 @@
             <div class="col-lg-4 col-md-8">
               <div class="single_blog blog_3 mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
                 <div class="blog_image">
-                  <img src="assets/images/blog-3.jpg" alt="blog">
+                  <img src="../../frontend/assets/images/blog-3.jpg" alt="blog">
                 </div>
                 <div class="blog_content">
                   <div class="blog_meta d-flex justify-content-between">
@@ -457,7 +458,3 @@
       <!--====== BACK TOP TOP PART ENDS ======-->
     </div>
 </template>
-
-<style scoped>
-
-</style>
