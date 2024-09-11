@@ -1,6 +1,7 @@
 <script setup>
-
-import {RouterLink} from "vue-router";
+  import {RouterLink} from "vue-router";
+  const title = "HTML App Landing Page Template";
+  const description = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.";
 </script>
 
 <template>
@@ -58,8 +59,8 @@ import {RouterLink} from "vue-router";
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="header_hero_content mt-45">
-              <h2 class="header_title wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.2s">HTML App Landing Page Template</h2>
-              <p class="wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.6s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+              <h2 class="header_title wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.2s">{{ title }}</h2>
+              <p class="wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.6s">{{ description }}</p>
               <ul>
                 <li><a class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1s" href="#">Discover More</a></li>
                 <li><a class="main-btn main-btn-2 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.4s" href="#">Download App</a></li>
