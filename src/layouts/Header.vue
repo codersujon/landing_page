@@ -23,7 +23,7 @@ import {RouterLink} from "vue-router";
 
               <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                 <ul id="nav" class="navbar-nav ml-auto">
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <RouterLink class="page-scroll" :to="{name: home}">Home</RouterLink>
                   </li>
                   <li class="nav-item">
@@ -78,3 +78,8 @@ import {RouterLink} from "vue-router";
   </section>
   <!--====== HEADER PART ENDS ======-->
 </template>
+<style lang="css">
+  #nav .router-link-exact-active {
+    color: #F85146;
+  }
+</style>
