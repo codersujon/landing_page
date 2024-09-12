@@ -1,5 +1,5 @@
 <script setup>
-
+import FeaturesContent from "@/components/child-components/FeaturesContent.vue";
 </script>
 
 <template>
@@ -12,10 +12,10 @@
             <div class="features_icon">
               <i class="lni lni-code"></i>
             </div>
-            <div class="features_content">
-              <h4 class="features_title">Bootstrap</h4>
-              <p>Lorem ipsum dolor sit ame consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
-            </div>
+            <FeaturesContent
+                title="Bootstrap 5"
+                description="Lorem ipsum dolor sit ame consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut."
+            />
           </div> <!-- single featuresow -->
         </div>
         <div class="col-lg-4 col-md-7 col-sm-8">
@@ -23,10 +23,10 @@
             <div class="features_icon">
               <i class="lni lni-layers"></i>
             </div>
-            <div class="features_content">
-              <h4 class="features_title">HTML5</h4>
-              <p>Lorem ipsum dolor sit ame consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
-            </div>
+            <FeaturesContent
+                title="HTML5"
+                description="Lorem ipsum dolor sit ame consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut."
+            />
           </div> <!-- single featuresow -->
         </div>
         <div class="col-lg-4 col-md-7 col-sm-8">
@@ -34,10 +34,10 @@
             <div class="features_icon">
               <i class="lni lni-exit-down"></i>
             </div>
-            <div class="features_content">
-              <h4 class="features_title">Free</h4>
-              <p>Lorem ipsum dolor sit ame consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
-            </div>
+            <FeaturesContent
+                title="Free"
+                description="Lorem ipsum dolor sit ame consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut."
+            />
           </div> <!-- single featuresow -->
         </div>
       </div> <!-- row -->

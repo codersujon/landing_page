@@ -1,5 +1,6 @@
 <script setup>
-
+  const title = "You are using free lite version"
+  const description = "Please, purchase full version of the template to get all sections, features and permission to remove footer credits."
 </script>
 
 <template>
@@ -8,9 +9,9 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="section_title text-center">
-            <h4 class="title">You are using free lite version</h4>
-            <p>Please, purchase full version of the template to get all sections, features and permission to remove footer credits.</p></br>
-
+            <h4 class="title">{{title}}</h4>
+            <p>{{description}}</p>
+            <br>
             <a href="https://rebrand.ly/advanced-ud" rel="nofollow" class="main-btn">Purchase Now</a>
           </div> <!-- section title -->
         </div>
