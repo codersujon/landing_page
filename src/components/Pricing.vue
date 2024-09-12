@@ -1,5 +1,7 @@
 <script setup>
 import SectionTitle from "@/layouts/SectionTitle.vue";
+import PricingTopBar from "@/components/child-components/pricingTopBar.vue";
+import PriceList from "@/components/child-components/PriceList.vue";
 </script>
 
 <template>
@@ -21,18 +23,16 @@ import SectionTitle from "@/layouts/SectionTitle.vue";
       <div class="row justify-content-center">
         <div class="col-lg-4 col-md-8 col-sm-10">
           <div class="single_pricing text-center pricing_color_1 mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
-            <div class="pricing_top_bar">
-              <h5 class="pricing_title">Startup</h5>
-              <i class="lni lni-coffee-cup"></i>
-              <span class="price">$9.00</span>
-            </div>
-            <div class="pricing_list">
-              <ul>
-                <li>24/7 Support</li>
-                <li>Free Update</li>
-                <li>unimited download</li>
-              </ul>
-            </div>
+            <PricingTopBar
+                title="Startup"
+                iconName="lni lni-coffee-cup"
+                price="$9.00"
+            />
+            <PriceList
+                list1="24/7 Support"
+                list2="Free Update"
+                list3="unimited download"
+            />
             <div class="pricing_btn">
               <a href="#" class="main-btn main-btn-2">Get Started</a>
             </div>
@@ -40,18 +40,16 @@ import SectionTitle from "@/layouts/SectionTitle.vue";
         </div>
         <div class="col-lg-4 col-md-8 col-sm-10">
           <div class="single_pricing text-center pricing_active pricing_color_2 mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
-            <div class="pricing_top_bar">
-              <h5 class="pricing_title">Standard</h5>
-              <i class="lni lni-crown"></i>
-              <span class="price">$15.00</span>
-            </div>
-            <div class="pricing_list">
-              <ul>
-                <li>24/7 Support</li>
-                <li>Free Update</li>
-                <li>unimited download</li>
-              </ul>
-            </div>
+            <PricingTopBar
+                title="Standard"
+                iconName="lni lni-crown"
+                price="$15.00"
+            />
+            <PriceList
+                list1="24/7 Support"
+                list2="Free Update"
+                list3="unimited download"
+            />
             <div class="pricing_btn">
               <a href="#" class="main-btn">Get Started</a>
             </div>
@@ -59,18 +57,16 @@ import SectionTitle from "@/layouts/SectionTitle.vue";
         </div>
         <div class="col-lg-4 col-md-8 col-sm-10">
           <div class="single_pricing text-center pricing_color_3 mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
-            <div class="pricing_top_bar">
-              <h5 class="pricing_title">Premium</h5>
-              <i class="lni lni-diamond-alt"></i>
-              <span class="price">$20.00</span>
-            </div>
-            <div class="pricing_list">
-              <ul>
-                <li>24/7 Support</li>
-                <li>Free Update</li>
-                <li>unimited download</li>
-              </ul>
-            </div>
+            <PricingTopBar
+                title="Premium"
+                iconName="lni lni-diamond-alt"
+                price="$20.00"
+            />
+            <PriceList
+                list1="24/7 Support"
+                list2="Free Update"
+                list3="unimited download"
+            />
             <div class="pricing_btn">
               <a href="#" class="main-btn main-btn-2">Get Started</a>
             </div>
