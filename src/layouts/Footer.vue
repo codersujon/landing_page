@@ -1,5 +1,7 @@
 <script setup>
     const year = new Date().getFullYear();
+    const subscribe = "Subscribe our newsletter";
+    const description = "Join thousands of users who believe this is the one app.";
 </script>
 
 <template>
@@ -9,8 +11,8 @@
       <div class="row justify-content-center">
         <div class="col-lg-7">
           <div class="footer_subscribe text-center">
-            <h3 class="subscribe_title">Subscribe our newsletter</h3>
-            <p>Join thousands of users who believe this is the one app.</p>
+            <h3 class="subscribe_title">{{ subscribe }}</h3>
+            <p>{{ description }}</p>
 
             <div class="subscribe_form">
               <form action="#">

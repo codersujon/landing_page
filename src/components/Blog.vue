@@ -1,5 +1,5 @@
 <script setup>
-
+import SectionTitle from "@/layouts/SectionTitle.vue";
 </script>
 
 <template>
@@ -8,10 +8,12 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6">
-          <div class="section_title text-center pb-25">
-            <h4 class="title">From The Blog</h4>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore.</p>
-          </div> <!-- section title -->
+
+            <SectionTitle
+                sectionTitle = "From The Blog"
+                sectionDes = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore."
+            />
+
         </div>
       </div> <!-- row -->
       <div class="row justify-content-center">
